@@ -11,7 +11,7 @@ Para criar o banco, siga os seguintes passos:
 
 3. Caso já exista um banco com a respectiva tabela do teste, basta apontar o banco no arquivo appsettings.json, seção ConnectionStrings
 
-Na pasta POstMan, o CRUD do teste no formato do PostMan (para chamar os EndPoints)
+No arquivo WebMotors.postman_collection, o CRUD do teste no formato do PostMan (para chamar os EndPoints)
 
 
 Versões das ferramentas
