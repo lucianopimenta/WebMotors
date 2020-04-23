@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "34f9a58b-6163-4440-af6c-2edf2fbbf08e",
+		"name": "WebMotors",
+		"description": "Api para teste de Back-end C# para a WebMotors",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/anuncio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anuncio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/anuncio/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anuncio",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\": 0,\n\t\"marca\": \"Ford\",\n\t\"modelo\": \"Ecosport\",\n\t\"versao\": \"1.0 MPI EL 8V FLEX 4P MANUAL\",\n\t\"ano\": 2015,\n\t\"quilometragem\": 65893,\n\t\"observacao\": \"É uma EcoSport\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/anuncio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anuncio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ID\": 3,\n\t\"marca\": \"Honda\",\n\t\"modelo\": \"CRV\",\n\t\"versao\": \"1.8 16V EVO FLEX FREEDOM OPEN EDITION\",\n\t\"ano\": 2017,\n\t\"quilometragem\": 55585,\n\t\"observacao\": \"Carro muito bem cuidado.\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/anuncio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anuncio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/anuncio/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"anuncio",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
